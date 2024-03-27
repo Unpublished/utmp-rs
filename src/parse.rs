@@ -36,6 +36,7 @@ impl<T> UtmpParserImpl<BufReader<File>, T> {
 ///
 /// ```
 /// # use utmp_rs::UtmpParser;
+/// # #[cfg(target_os = "linux")]
 /// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// for entry in UtmpParser::from_path("/var/run/utmp")? {
 ///     let entry = entry?;

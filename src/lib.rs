@@ -6,6 +6,7 @@
 //! which returns a `Vec<UtmpEntry>` on success:
 //! ```
 //! # use anyhow::Result;
+//! # #[cfg(target_os = "linux")]
 //! # fn main() -> Result<()> {
 //! let entries = utmp_rs::parse_from_path("/var/run/utmp")?;
 //! // ...
@@ -18,6 +19,7 @@
 //! ```
 //! # use anyhow::Result;
 //! use utmp_rs::UtmpParser;
+//! # #[cfg(target_os = "linux")]
 //! # fn main() -> Result<()> {
 //! for entry in UtmpParser::from_path("/var/run/utmp")? {
 //!     let entry = entry?;
