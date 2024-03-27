@@ -12,7 +12,7 @@ license = "MIT"
 
 [dependencies]
 time = "0.3"
-libc = "0.2.66"
+libc = "0.2.153"
 utmp-raw = { version = "0.3.0", path = "raw" }
 thiserror = "1.0.10"
 zerocopy = "0.6"
