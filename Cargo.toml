@@ -14,7 +14,7 @@ license = "MIT"
 time = "0.3"
 libc = "0.2.153"
 utmp-raw = { version = "0.3.0", path = "raw" }
-thiserror = "1.0.10"
+thiserror = "1.0.58"
 zerocopy = "0.6"
 
 [workspace]
