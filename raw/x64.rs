@@ -18,7 +18,7 @@ pub struct utmp {
     /// Type of record
     pub ut_type: c_short,
     /// PID of login process
-    pub ut_pid: libc::pid_t,
+    pub ut_pid: i32,
     /// Device name of tty - `"/dev/"`
     pub ut_line: [u8; UT_LINESIZE],
     /// Terminal name suffix, or `inittab(5)` ID
