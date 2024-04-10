@@ -21,7 +21,7 @@ zerocopy = { version = "0.7", features = ["derive"] }
 members = ["raw"]
 
 [dev-dependencies]
-anyhow = "1.0.81"
+anyhow = "1.0.82"
 once_cell = "1.19.0"
 
 [package.metadata.docs.rs]
