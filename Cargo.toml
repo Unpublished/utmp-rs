@@ -15,7 +15,7 @@ time = "0.3.36"
 libc = "0.2.154"
 utmp-raw = { version = "0.4.0", path = "raw" }
 thiserror = "1.0.59"
-zerocopy = { version = "0.7", features = ["derive"] }
+zerocopy = { version = "0.7.32", features = ["derive"] }
 
 [workspace]
 members = ["raw"]
